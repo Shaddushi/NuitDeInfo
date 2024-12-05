@@ -13,8 +13,8 @@ import System.Directory (doesFileExist)
 
 main :: IO ()
 main = do
-    dbExists <- doesFileExist "twitter.db"
-    conn <- sqliteOpen "twitter.db"
+    dbExists <- doesFileExist "user.db"
+    conn <- sqliteOpen "user.db"
     when (not dbExists) $ runSeldaT dbInit conn
     scotty 8080 $ do
         middleware simpleCors
