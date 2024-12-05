@@ -4,23 +4,18 @@
 
 
 <template>
-        <header class="header_spliter container">
-            <div>
-              <a href="/">SEaXfriends</a>
-            </div>
+        <header class="bg-secondary py-4">
+            <div class="container d-flex justify-content-between">
+                <div>
+                    <a href="/" class="text-white text-decoration-none">SEaXfriends</a>
+                </div>
 
-            <div>
-              <a href="/credits"> C </a>
-              <a href="/succes"> S</a>
+                <div>
+                    <a href="/credits" class="text-white text-decoration-none"> C </a>
+                    <a href="/succes" class="text-white text-decoration-none"> S</a>
+                </div>
+
             </div>
 
         </header>
 </template>
-
-
-<style>
-    .header_spliter{
-      display: flex;
-      justify-content: space-between;
-    }
-</style>
