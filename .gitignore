@@ -1,5 +1,5 @@
 Haskell_backend/.vscode
 Haskell_backend/dist-newstyle
-Vue_frontEnd/.vscode
-Vue_frontEnd/dist
-Vue_frontEnd/node_modules/
+Vue-frontEnd/.vscode
+Vue-frontEnd/dist
+Vue-frontEnd/node_modules/
