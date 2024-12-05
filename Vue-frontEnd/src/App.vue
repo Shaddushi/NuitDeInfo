@@ -9,6 +9,7 @@ import axios from 'axios';
 </script>
 
 <template>
+
     <div class="h-100">
 
         <Modal title="Login"> 
@@ -18,3 +19,4 @@ import axios from 'axios';
         <Home />
     </div>
 </template>
+
