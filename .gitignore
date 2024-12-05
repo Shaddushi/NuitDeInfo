@@ -3,3 +3,4 @@ Haskell_backend/dist-newstyle/
 Vue-frontEnd/.vscode
 Vue-frontEnd/dist
 Vue-frontEnd/node_modules/
+node_modules
