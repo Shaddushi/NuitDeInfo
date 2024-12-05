@@ -1,5 +1,6 @@
-./Haskell_backend/.vscode
-./Haskell_backend/dist-newstyle
-./Vue_frontEnd/.vscode
-./Vue_frontEnd/dist
-./Vue_frontEnd/node_modules
+Haskell_backend/.vscode
+Haskell_backend/dist-newstyle/
+Vue-frontEnd/.vscode
+Vue-frontEnd/dist
+Vue-frontEnd/node_modules/
+node_modules
