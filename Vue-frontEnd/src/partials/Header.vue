@@ -6,7 +6,7 @@
 <template>
         <header class="header_spliter container">
             <div>
-              <a href="/">Titre a trouvé</a>
+              <a href="/">SEaXfriends</a>
             </div>
 
             <div>
@@ -23,5 +23,4 @@
       display: flex;
       justify-content: space-between;
     }
-
 </style>
