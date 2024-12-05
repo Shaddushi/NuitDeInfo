@@ -2,12 +2,13 @@
 {-# LANGUAGE DeriveGeneric #-}
 
 module Api where
-import Bdd
+import User
 import Web.Scotty
 import Data.Aeson (object, (.=), FromJSON, ToJSON)
 import Database.Selda.SQLite
 import Data.Text
 import GHC.Generics (Generic)
+--import Control.Monad.IO.Class
 
 data NewUser = NewUser
     {
@@ -36,10 +37,15 @@ instance ToJSON NewUser
 
 apiRoutes :: ScottyM()
 apiRoutes = do
-    get "/" $ text "Salut"
+    get "/" $ do
+        users <- liftIO $ withSQLite "user.db" dbSelectUser
+        let jsonUsers = object ["users" .= users]
+        json jsonUsers
 
     get "/login" $ text "Login"
 
     get "/api/login" $ text "Api Login"
 
-    get "/api/succes" $ text "Api Succes"
+    get "/api/succes" $ text "Api Succès"
+
+

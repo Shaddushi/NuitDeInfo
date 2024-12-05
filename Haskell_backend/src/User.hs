@@ -5,7 +5,7 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Use camelCase" #-}
 
-module Bdd where
+module User where
 
 import Data.Aeson (ToJSON,toJSON)
 import Database.Selda
@@ -34,7 +34,7 @@ data Success = Success
     , success_nom :: Text
     , success_description :: Text
     , success_type :: Text
-    , related_id :: Num
+    , related_id :: Integer
 } deriving (Generic, Show)
 
 instance SqlRow Success

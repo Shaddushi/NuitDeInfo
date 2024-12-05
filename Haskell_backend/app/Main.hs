@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Api
-import Bdd
+import User
 import Web.Scotty
 import Data.Aeson (object, (.=))
 import Network.Wai.Middleware.Cors (cors, CorsResourcePolicy(..), simpleCors)

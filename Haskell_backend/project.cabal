@@ -8,6 +8,7 @@ common deps
     ghc-options:        -Wall -O
     default-language:   Haskell2010
     build-depends:      base, selda, scotty, wai,wai-cors , selda-sqlite, directory, aeson, text, filepath
+	
 
 library
     import:             deps
