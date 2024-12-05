@@ -4,7 +4,7 @@
 
 
 <template>
-        <header class="header_spliter">
+        <header class="header_spliter container">
             <div>
               <a href="/">Titre a trouvé</a>
             </div>
