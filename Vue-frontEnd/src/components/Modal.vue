@@ -10,6 +10,11 @@
         title: {
             type: String,
             default: ""
+        },
+
+        buttonClass: {
+            type: String,
+            default: "btn btn-primary"
         }
     })
 
@@ -24,8 +29,8 @@
 
 <template>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
+    <button type="button" :class="buttonClass" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <slot name="button"></slot>
     </button>
 
     <!-- Modal -->

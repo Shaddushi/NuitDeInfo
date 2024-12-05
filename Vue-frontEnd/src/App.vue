@@ -6,9 +6,7 @@ import Modal from './components/Modal.vue';
 import Login from './partials/Login.vue';
 import axios from 'axios';
 
-
 </script>
-
 
 <template>
     <div class="h-100">
@@ -20,4 +18,3 @@ import axios from 'axios';
         <Home />
     </div>
 </template>
-
