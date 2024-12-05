@@ -36,4 +36,10 @@ instance ToJSON NewUser
 
 apiRoutes :: ScottyM()
 apiRoutes = do
-	get "/" $ text "Salut"
+    get "/" $ text "Salut"
+
+    get "/login" $ text "Login"
+
+    get "/api/login" $ text "Api Login"
+
+    get "/api/succes" $ text "Api Succes"
