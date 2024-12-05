@@ -1,11 +1,12 @@
 <script setup>
-  import { ref, onMounted } from 'vue';
-  import axios from 'axios';
-  const message = ref([]); 
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+
+  const message = ref([]);
   onMounted(async () => {
     try {
       const response = await axios.get('http://localhost:8080/api/getUsers');
-      message.value = response.data.users; 
+      message.value = response.data.users;
       console.log(message.value)
 
     } catch (error) {
@@ -19,8 +20,6 @@
 
 <template>
     <div>
-        <header></header>
-        <main></main>
     </div>
 </template>
 
