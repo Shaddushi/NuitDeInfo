@@ -5,9 +5,9 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Use camelCase" #-}
 
-module Bdd where
+module User where
 
-import Data.Aeson (ToJSON,toJSON)
+import Data.Aeson (object, (.=), FromJSON, ToJSON, toJSON)
 import Database.Selda
 import Database.Selda.SQLite
 import Data.Text (pack)
@@ -26,7 +26,8 @@ instance SqlRow User
 instance ToJSON User
 
 user_table :: Table User
-user_table = table "User" [#user_id :- autoPrimary]
+user_table = table "User" [#user_id :- autoPrimary,
+                           #user_pseudo :- unique]
 
 
 data Success = Success
@@ -34,14 +35,16 @@ data Success = Success
     , success_nom :: Text
     , success_description :: Text
     , success_type :: Text
-    , related_id :: Num
+    , related_id :: Int
+    , success_key :: Text
 } deriving (Generic, Show)
 
 instance SqlRow Success
 instance ToJSON Success
 
 success_table :: Table Success
-success_table = table "Success" [#success_id :- autoPrimary]
+success_table = table "Success" [#success_id :- primary
+                                ,#success_key :- unique]
 
 data User_Success = User_Success
     { id_user_success :: ID User_Success
@@ -58,6 +61,16 @@ user_success_table = table "User_Success" [ #id_user_success :- autoPrimary
                             , #id_success :- foreignKey success_table #success_id]
 
 
+data NewUser = NewUser
+    {
+        user :: Text,
+        user_password :: Text
+    }deriving (Show, Generic)
+
+instance FromJSON NewUser
+instance ToJSON NewUser
+
+
 dbSelectUser :: SeldaT SQLite IO[User]
 dbSelectUser = query $ do
     select user_table
@@ -69,6 +82,24 @@ dbSelectSuccess = query $ do
 dbSelectUser_Success :: SeldaT SQLite IO[User_Success]
 dbSelectUser_Success = query $ do
     select user_success_table
+
+dbSelectUserOnly ::NewUser -> SeldaT SQLite IO[User]
+dbSelectUserOnly (NewUser userPseudo userMdp) = query $ do
+    u <- select user_table
+    restrict ( u ! #user_pseudo .== literal userPseudo)
+
+dbSelectUsersWithPassword :: NewUser-> SeldaT SQLite IO[User]
+dbSelectUsersWithPassword (NewUser userPseudo userMdp) = query $ do
+    u <-  select user_table
+    restrict (u ! #user_pseudo .== literal userPseudo)
+    restrict (u ! #user_mdp .== literal userMdp)
+
+
+dbInsertUser :: NewUser -> String
+dbInsertUser x = do
+    let nameOnly = dbSelectUserOnly x
+    liftIO $ print nameOnly
+    return "True"
 
 
 dbInit :: SeldaT SQLite IO ()
@@ -83,7 +114,7 @@ dbInit = do
     createTable success_table
     tryInsert success_table
         [
-        Success def "Honore est mort" "Vous avez tue Honore" "Humain" 3,
-        Success def "Poasson est mort" "Vous avez tue le poasson" "Poisson" 6
+        Success def "Honore est mort" "Vous avez tue Honore" "Humain" 3 "key_jcp",
+        Success def "Poasson est mort" "Vous avez tue le poasson" "Poisson" 6 "key_jcp2"
         ] >>= liftIO . print
 

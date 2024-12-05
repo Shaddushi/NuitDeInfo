@@ -1,5 +1,5 @@
 <script setup>
-  import PersonList from "./components/PersonList.vue"
+  import PersonList from "./components/User.vue"
   import FormNewUser from "./components/FormNewUser.vue";
   import { ref, onMounted } from 'vue';
   import axios from 'axios';
