@@ -8,7 +8,7 @@
         <div class="row h-100">
             <div class="col-md-6 text-center h-100 bg-warning">
                 <div class="body-container mt-5 h-100 position-relative">
-                    <div class="">
+                    <div class="position-absolute">
                         <img src="../../assets/corps/immune_system.png" class="img-fluid position-absolute">
                         <img src="../../assets/corps/lungs.png" class="img-fluid position-absolute">
                         <img src="../../assets/corps/skin.png" class="img-fluid position-absolute">

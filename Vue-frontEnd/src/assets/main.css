@@ -2,3 +2,10 @@
 html, body, #app {
   height: 100%;
 }
+
+@font-face {
+  font-family: 'test-font'; /* Nom personnalisé de la police */
+  src: url('@components/8-bit-wonder.ttf') format('truetype'); /* Chemin vers le fichier TTF */
+  font-weight: normal; /* Poids de la police (normal, bold, etc.) */
+  font-style: normal; /* Style de la police (normal, italic, etc.) */
+}
