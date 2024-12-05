@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import Home from './pages/Home/Home.vue'
 import axios from 'axios';
+
 let ici = "aaa"
   const message = ref([]);
   onMounted(async () => {
@@ -15,11 +17,14 @@ let ici = "aaa"
     }
 
   });
+
+
 </script>
 
 
 <template>
     <div>
+        <Home></Home>
     </div>
 </template>
 
