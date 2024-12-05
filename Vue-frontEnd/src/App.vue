@@ -4,6 +4,7 @@ import Home from './pages/Home/Home.vue'
 import Header from './partials/Header.vue'
 import axios from 'axios';
 
+
 </script>
 
 

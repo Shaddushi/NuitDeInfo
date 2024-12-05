@@ -6,7 +6,11 @@
     <div class="h-100">
         <div class="row h-100">
             <div class="col-md-6 text-center h-100 bg-warning">
-                <Modal />
+                <Modal
+                :show-on-mounted="true"
+                title="Poumons">
+                    ici
+                </Modal>
             </div>
             <div class="col-md-6 text-center h-100 bg-primary">poissons</div>
         </div>
