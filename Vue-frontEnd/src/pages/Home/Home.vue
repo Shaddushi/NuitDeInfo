@@ -8,7 +8,7 @@
     const skin = ref(true)
     const brain = ref(true)
     const veins = ref(true)
-    const heart = ref(true)
+    const heart = ref(2)
     const kidney = ref(true)
     const red_cells = ref(true)
     const bones = ref(true)
@@ -30,7 +30,7 @@
                     <img v-if="skin" src="../../assets/corps/body2.png" class="img-fluid position-absolute custom-img">
                     <img v-if="brain" src="../../assets/corps/brain.png" class="img-fluid position-absolute custom-img">
                     <img v-if="veins" src="../../assets/corps/veins.png" class="img-fluid position-absolute custom-img">
-                    <img v-if="heart" src="../../assets/corps/heart.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="heart != 1" src="../../assets/corps/heart.png" class="img-fluid position-absolute custom-img">
                     <img v-if="kidney" src="../../assets/corps/kidney.png" class="img-fluid position-absolute custom-img">
                     <img v-if="red_cells" src="../../assets/corps/red_cells.png" class="img-fluid position-absolute custom-img">
                     <img v-if="bones" src="../../assets/corps/bones.png" class="img-fluid position-absolute custom-img">
@@ -83,11 +83,15 @@
 
                     <ElementModal
                     name="heart"
-                    @input="v => heart = v"
                     id="heart"
                     buttonClass="position-absolute button-infos"
                     title="Coeur">
-                        ici
+                        <template #modal_body>
+                            <div>
+                                {{heart}}
+                            </div>
+                            <input type="range" class="form-range" min="1" v-model="heart" max="3" step="1">
+                        </template>
                     </ElementModal>
 
                     <ElementModal
@@ -140,37 +144,37 @@
     }
 
     #lungs{
-        top: 50%;
+        top: 33%;
         left: 46%;
     }
 
     #skin{
-        top: 25%;
+        top: 15%;
         left: 30%;
     }
 
     #veins{
-        top: 25%;
+        top: 15%;
         left: 65%;
     }
 
     #heart{
-        top: 62%;
+        top: 26%;
         left: 46%;
     }
 
     #kidney{
-        top: 80%;
-        left: 46%;
-    }
-
-    #bones{
         top: 40%;
         left: 46%;
     }
 
+    #bones{
+        top: 20%;
+        left: 46%;
+    }
+
     #red_cells{
-        top: 166%;
+        top: 80%;
         left: 65%;
     }
 

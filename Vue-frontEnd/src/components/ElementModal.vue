@@ -43,10 +43,12 @@ function test(){
         </template>
 
         <template #modal_body>
-            <div class="form-switch form-switch">
-                <input class="form-check-input fs-2" type="checkbox" v-model="value" @input="test(value)">
-                <label class="form-check-label ps-3" for="checkbox-input">Activé</label>
-            </div>
+            <slot name="modal_body">
+                <div class="form-switch form-switch">
+                    <input class="form-check-input fs-2" type="checkbox" v-model="value" @input="test(value)">
+                    <label class="form-check-label ps-3" for="checkbox-input">Activé</label>
+                </div>
+            </slot>
         </template>
 
 
