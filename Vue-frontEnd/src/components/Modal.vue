@@ -12,15 +12,27 @@
             default: ""
         },
 
+        name: {
+            type: String,
+            default: ""
+        },
+
         buttonClass: {
             type: String,
             default: "btn btn-primary"
+        },
+
+        buttonId: {
+            type: String,
+            default: ""
         }
     })
 
     onMounted(() => {
+        console.log(props.title)
+        console.log('#test-'+props.title)
         if(props.showOnMounted) {
-            const myModal = new bootstrap.Modal('#exampleModal');
+            const myModal = new bootstrap.Modal('#modal-'+props.name);
             myModal.show();
         }
 
@@ -29,17 +41,17 @@
 
 <template>
     <!-- Button trigger modal -->
-    <button type="button" :class="buttonClass" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" :id="buttonId" :class="buttonClass" data-bs-toggle="modal" :data-bs-target="'#modal-'+props.name">
         <slot name="button"></slot>
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" :id="'modal-'+props.name" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="h1 modal-title fs-5" id="exampleModalLabel">
-                        {{ title }}
+                        {{ props.title }}
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
