@@ -67,3 +67,25 @@ html, body, #app {
 }
 .gradient{
   background:#ecebc0 }
+
+nav{
+  display: flex-end;
+}
+.e{
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+.e visited{
+  text-decoration: none;
+}
+nav a{
+  border: 1px black solid;
+  color:  white;
+  background-color: black;
+}
+
+.logo{
+  width: 20%;
+}
+#nav-bar{display: flex;}
