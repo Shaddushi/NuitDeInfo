@@ -14,7 +14,7 @@ import ModalLogin from "@/components/ModalLogin.vue";
     <div class="h-100">
 
         <ModalLogin>
-          <template #modal_body> <Login></Login> </template> 
+          <template #modal_body> <Login></Login> </template>
           <template #footer>"aaa"</template>
         </ModalLogin>
         <Header />

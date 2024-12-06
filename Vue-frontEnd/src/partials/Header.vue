@@ -7,7 +7,7 @@
         <header class="bg-secondary py-4">
             <div class="container d-flex justify-content-between">
                 <div>
-                    <a href="/" class="text-white text-decoration-none">SEaXfriends</a>
+                    <a href="/" class="text-white text-decoration-none title-font">SEaXfriends</a>
                 </div>
 
                 <div>
