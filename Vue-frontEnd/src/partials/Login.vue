@@ -5,6 +5,7 @@
     const user_name = ref("");
     const input_password = ref("");
     const input_pseudo = ref("");
+    const checkbox_captcha = ref("");
 
     const emit = defineEmits(['submitNewUserName'])
 
@@ -38,6 +39,9 @@
     </div>
     <div class="div-captcha">
       <img src="../assets/captcha/recaptcha.png" alt="captcha" />
+      <div class="div-input-captcha">
+        <button>Etes vous un robot ?</button>
+      </div>
     </div>
   </div>
 
