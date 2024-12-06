@@ -1,8 +1,12 @@
 <script setup>
-	document.addEventListener("DOMContentLoaded", () => {
+	import { defineEmits } from "vue";
+
+  const emit = defineEmits(['update'])
+
+  document.addEventListener("DOMContentLoaded", () => {
 	var canvas = document.createElement("canvas");
 	var ctx = canvas.getContext("2d");
-	canvas.width = 512;
+	canvas.width = 460;
 	canvas.height = 480;
 
 	let element = document.getElementById("game");
@@ -134,7 +138,7 @@
 			}
 		}
 
-		tortue.r = (tortue.x >= 490) ? -1 : tortue.r;
+		tortue.r = (tortue.x >= 440) ? -1 : tortue.r;
 		tortue.r = (tortue.x <= 0) ? 1 : tortue.r;
 		tortue.s = (tortue.y >= 461) ? -1 : tortue.s;
 		tortue.s = (tortue.y <= 0) ? 1 : tortue.s;
@@ -143,7 +147,7 @@
 		
 		let i=0;
 		while(i < liste.length){
-			if(liste[i].x >= 490){
+			if(liste[i].x >= 440){
 				liste[i].r = Math.round(Math.random()) * 2 - 1;
 				liste[i].x = 32 + (Math.random() * (canvas.width - 96));
 				liste[i].y = 32 + (Math.random() * (canvas.width - 96));
@@ -203,9 +207,11 @@
 		}
 	})
 
+
 	function end(){
+    const hasEnd = true
+    emit("update", hasEnd)
 		console.log("Touché");
-		document.getElementById("audio").play();
 	}
 	let play_game = false;
 
@@ -230,8 +236,10 @@
 </script>
 
 <template>
-	<audio id="audio" src="../../../NuitDeLInfo/src/assets/music/Kubbi-Ember-04Cascade.mp3" autoplay hidden></audio>
-	<div id="game">
-	</div>
-	<button id="play">Play</button>
+  <div class="captcha-game">
+    <audio id="audio" src="../../../NuitDeLInfo/src/assets/music/Kubbi-Ember-04Cascade.mp3" autoplay hidden></audio>
+    <div id="game">
+    </div>
+    <button id="play">Play</button>
+  </div>
 </template>
