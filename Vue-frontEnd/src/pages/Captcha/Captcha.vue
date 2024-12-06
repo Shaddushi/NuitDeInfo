@@ -245,6 +245,10 @@
     </div>
     <div id="game">
     </div>
-    <button id="play">Play</button>
+	<div class="center" id="play">
+		<img src="../../../src/assets/corps/play.png"  class="play">
+	</div>
+		
+	
   </div>
 </template>

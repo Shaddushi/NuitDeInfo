@@ -25,7 +25,7 @@ const sendForm = () => {
 </script>
 
 <template>
-  <p>Welcome {{ input_pseudo }}</p>
+  <p class="title-font">Welcome {{ input_pseudo }}</p>
   <div class="container-login">
     <div class="div-input">
       <input v-model="input_pseudo" placeholder="Pseudo" id="pseudo" />
@@ -35,11 +35,11 @@ const sendForm = () => {
       <div class="div-captcha" v-show="!checkbox_captcha">
         <img src="../assets/captcha/recaptcha.png" alt="captcha" />
         <div class="div-input-captcha">
-          <button v-on:click="displayPlay()">Etes vous un robot ?</button>
+          <button v-on:click="displayPlay()" class="title-font">Etes vous un robot ?</button>
         </div>
       </div>
     </div>
-    <div v-show="has_win">BRAVO VOUS N'ETES PAS UN ROBOT</div>
+    <div v-show="has_win" class="title-font center" >BRAVO VOUS ETES UN ROBOT</div>
 
   </div>
   <div class="modal-footer">
