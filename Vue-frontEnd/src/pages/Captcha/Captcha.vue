@@ -2,6 +2,7 @@
 	import { defineEmits } from "vue";
 
   const emit = defineEmits(['update'])
+  var hasEnd = false
 
   document.addEventListener("DOMContentLoaded", () => {
 	var canvas = document.createElement("canvas");
@@ -209,9 +210,11 @@
 
 
 	function end(){
-    const hasEnd = true
+    hasEnd = true;
     emit("update", hasEnd)
+    document.getElementById("audio").pause()
 		console.log("Touché");
+    play_game = false;
 	}
 	let play_game = false;
 
@@ -224,8 +227,8 @@
 			update(1);
 			render();
 			let audioElement = document.getElementById("audio");
-			if(audio.paused){
-				audio.play();
+			if(audioElement.paused){
+				audioElement.play();
 			}
 		}
 	}
@@ -237,7 +240,9 @@
 
 <template>
   <div class="captcha-game">
-    <audio id="audio" src="../../../NuitDeLInfo/src/assets/music/Kubbi-Ember-04Cascade.mp3" autoplay hidden></audio>
+    <div v-if="!hasEnd">
+      <audio id="audio" src="../../../NuitDeLInfo/src/assets/music/Kubbi-Ember-04Cascade.mp3" hidden></audio>
+    </div>
     <div id="game">
     </div>
 	<div class="center" id="play">
