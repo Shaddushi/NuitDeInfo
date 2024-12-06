@@ -1,0 +1,238 @@
+{
+    "Truc":"Poisson",
+    { 
+        "Id": 26, 
+        "Nom": "Disparition des coraux", 
+        "Description": "La disparition des coraux entraînerait une baisse massive de la biodiversité marine et perturberait les écosystèmes océaniques. Les côtes deviendraient plus vulnérables à l'érosion et aux tempêtes, mettant en danger les communautés côtières. Les pêcheries commerciales et le tourisme souffriraient économiquement. Enfin, cela pourrait affecter la chimie océanique et le cycle du carbone, avec des implications pour le climat mondial. Lutter contre le réchauffement climatique et la pollution est essentiel pour leur conservation.", 
+        "Image": "/poissons/disp_coraux.webp", 
+        "Type": "Poisson", 
+        "Id_related": 0, 
+        "Key": "disp_coraux" 
+    },
+    { 
+        "Id": 28, 
+        "Nom": "Réduction de la salinité", 
+        "Description": "Réduire la salinité des océans perturberait gravement la vie marine, notamment les espèces adaptées à des niveaux de salinité spécifiques. Les coraux et d'autres organismes pourraient souffrir, menant à une baisse de la biodiversité. Cela affecterait également les courants marins et le cycle océanique, perturbant les écosystèmes globaux. Les processus biologiques comme la photosynthèse du phytoplancton seraient aussi impactés, influençant la chaîne alimentaire marine. Enfin, cela pourrait altérer les interactions climatiques en perturbant l'équilibre thermique des océans.", 
+        "Image": "/poissons/reduc_salinite.webp", 
+        "Type": "Poisson", 
+        "Id_related": 2, 
+        "Key": "reduc_salinite" 
+    },
+    { 
+        "Id": 27, 
+        "Nom": "suppression de la salinité", 
+        "Description": "La suppression totale de la salinité des océans serait catastrophique. Les organismes marins, y compris les poissons, coraux, et planctons, ne pourraient pas survivre dans de l'eau douce, entraînant une extinction massive de la vie marine. Les courants océaniques seraient profondément perturbés, affectant le climat global. La chimie de l'eau serait altérée, rendant les océans incapables de soutenir la majorité des écosystèmes actuels. Cela aurait des conséquences désastreuses sur la chaîne alimentaire et les industries dépendant de l'océan.", 
+        "Image": "/poissons/supr_salinite.webp", 
+        "Type": "Poisson", 
+        "Id_related": 1, 
+        "Key": "supr_salinite" 
+    },
+    { 
+        "Id": 29, 
+        "Nom": "Augmentation de la salinité", 
+        "Description": "Une augmentation de la salinité des océans perturberait gravement les écosystèmes marins, rendant l'environnement hostile pour de nombreuses espèces adaptées à des niveaux de salinité spécifiques. Les coraux et d'autres organismes marins pourraient décliner, entraînant une perte de biodiversité. Les courants marins et le cycle océanique seraient également affectés, modifiant les flux de nutriments et les températures. Les processus biologiques comme la photosynthèse du phytoplancton pourraient être altérés, impactant la chaîne alimentaire marine. Enfin, cela pourrait influencer le climat global en perturbant les interactions thermiques des océans.", 
+        "Image": "/poissons/augment_salinite.webp", 
+        "Type": "Poisson", 
+        "Id_related": 3, 
+        "Key": "augment_salinite" 
+    },
+    { 
+        "Id": 30, 
+        "Nom": "Réduction de la température", 
+        "Description": "Baisser la température des océans ralentirait les processus métaboliques des organismes marins, impactant leur croissance et reproduction. Les récifs coralliens, déjà vulnérables, pourraient ne pas survivre, entraînant une perte de biodiversité. Les courants océaniques seraient modifiés, perturbant les cycles de nutriments et les migrations d'espèces. Le phytoplancton, base de la chaîne alimentaire marine, pourrait voir sa productivité diminuer. Enfin, cela influencerait le climat global en modifiant les échanges thermiques entre les océans et l'atmosphère.", 
+        "Image": "/poissons/reduc_temperature.webp", 
+        "Type": "Poisson", 
+        "Id_related": 4, 
+        "Key": "reduc_temperature" 
+    },
+    { 
+        "Id": 31, 
+        "Nom": "Réduction à 0° de la température", 
+        "Description": "Réduire la température des océans à 0°C serait dévastateur. La majorité de la vie marine, adaptée à des températures spécifiques, ne survivrait pas. Les coraux et la biodiversité marine disparaîtraient, entraînant un effondrement des écosystèmes océaniques. Les courants marins seraient gravement perturbés, affectant les cycles de nutriments et les climats mondiaux. La glace se formerait à la surface, modifiant radicalement les habitats marins et impactant les échanges thermiques avec l'atmosphère.", 
+        "Image": "/poissons/reduc_0_temperature.webp", 
+        "Type": "Poisson", 
+        "Id_related": 5, 
+        "Key": "reduc_0_temperature" 
+    },
+    { 
+        "Id": 32, 
+        "Nom": "Augmentation de la température", 
+        "Description": "Augmenter la température des océans affecterait gravement les écosystèmes marins, entraînant le blanchissement des coraux et la perte de biodiversité. Les espèces marines, en particulier celles sensibles à la température, verraient leurs habitats perturbés. Les courants marins et les cycles de nutriments seraient modifiés, influençant la répartition des espèces et la productivité des océans. Les phénomènes climatiques extrêmes, comme les ouragans, deviendraient plus fréquents et intenses. Cela pourrait également exacerber le réchauffement climatique en augmentant la libération de gaz à effet de serre des océans.", 
+        "Image": "/poissons/augment_temperature.webp", 
+        "Type": "Poisson", 
+        "Id_related": 6, 
+        "Key": "augment_temperature" 
+    },
+    { 
+        "Id": 33, 
+        "Nom": "Augmentation à 100° de la température", 
+        "Description": "Porter la température des océans à 100°C aurait des conséquences catastrophiques. Toute vie marine serait instantanément anéantie, détruisant entièrement les écosystèmes océaniques. Les courants marins et les cycles de nutriments cesseraient d'exister, entraînant une perturbation complète des systèmes climatiques mondiaux. L'évaporation massive de l'eau augmenterait les phénomènes météorologiques extrêmes. Cela créerait des conditions climatiques invivables pour la majorité des formes de vie terrestres.", 
+        "Image": "/poissons/augment_100_temperature.webp", 
+        "Type": "Poisson", 
+        "Id_related": 7, 
+        "Key": "augment_100_temperature" 
+    },
+    { 
+        "Id": 34, 
+        "Nom": "Réduction du phytoplancton", 
+        "Description": "Réduire le nombre de planctons dans les océans aurait des effets dévastateurs. Les planctons sont à la base de la chaîne alimentaire marine, et leur diminution affecterait toutes les espèces marines, des plus petits poissons aux grands mammifères comme les baleines. La diminution du phytoplancton réduirait également la production d'oxygène, impactant non seulement la vie marine mais aussi l'atmosphère terrestre. Les écosystèmes océaniques seraient gravement perturbés, avec des conséquences pour la pêche et les économies côtières. Enfin, cela pourrait altérer les cycles de nutriments et les courants marins, modifiant le climat global.", 
+        "Image": "/poissons/reduc_phyto.webp", 
+        "Type": "Poisson", 
+        "Id_related": 8, 
+        "Key": "reduc_phyto" 
+    },
+    { 
+        "Id": 35, 
+        "Nom": "Suppression du phytoplancton", 
+        "Description": "Éliminer les planctons des océans serait catastrophique. Les planctons, étant à la base de la chaîne alimentaire marine, leur absence entraînerait l'extinction des espèces marines dépendantes, des petits poissons aux baleines. La production d'oxygène, fortement dépendante du phytoplancton, chuterait, affectant l'atmosphère terrestre. Les écosystèmes océaniques s'effondreraient, perturbant la pêche et les économies côtières. De plus, les cycles de nutriments et les courants marins seraient gravement affectés, modifiant le climat global.", 
+        "Image": "/poissons/supr_phyto.webp", 
+        "Type": "Poisson", 
+        "Id_related": 9, 
+        "Key": "supr_phyto" 
+    },
+    { 
+        "Id": 36, 
+        "Nom": "Suppression des marées", 
+        "Description": "Supprimer les marées des océans bouleverserait les écosystèmes côtiers, affectant les habitats de nombreuses espèces. Les cycles de nutriments seraient perturbés, impactant la productivité marine. Les courants marins et les systèmes de circulation océanique seraient modifiés, influençant le climat mondial. Les activités humaines, comme la pêche et le transport maritime, en subiraient les conséquences. Enfin, cela altérerait les rythmes naturels de certaines espèces marines, perturbant leur comportement et leur reproduction.", 
+        "Image": "/poissons/supr_maree.webp", 
+        "Type": "Poisson", 
+        "Id_related": 10, 
+        "Key": "supr_maree" 
+    },
+    { 
+        "Id": 37, 
+        "Nom": "Réduction des marées", 
+        "Description": "Réduire le nombre de marées causerait une diminution des mouvements d'eau côtiers, impactant la vie marine qui dépend de ces cycles pour la reproduction et l'alimentation. Les nutriments se déplaceraient moins, réduisant la productivité des écosystèmes marins. Les courants océaniques seraient perturbés, influençant le climat global. Les activités humaines comme la pêche pourraient être affectées par ces changements. En résumé, les écosystèmes côtiers et marins seraient gravement perturbés.", 
+        "Image": "/poissons/reduc_maree.webp", 
+        "Type": "Poisson", 
+        "Id_related": 11, 
+        "Key": "reduc_maree" 
+    },
+    { 
+        "Id": 38, 
+        "Nom": "Augmentation des marées", 
+        "Description": "Augmenter le nombre de marées bouleverserait les écosystèmes côtiers en créant des fluctuations d'eau plus fréquentes et intenses. Les habitats marins, comme les zones de reproduction des poissons et les mangroves, seraient perturbés. Les cycles de nutriments deviendraient erratiques, affectant la productivité marine. Les activités humaines, comme la pêche et le transport maritime, pourraient devenir plus imprévisibles. Enfin, le niveau des eaux pourrait causer plus d'érosion côtière et d'inondations, menaçant les communautés côtières.", 
+        "Image": "/poissons/augm_maree.webp", 
+        "Type": "Poisson", 
+        "Id_related": 12, 
+        "Key": "supr_maree" 
+    },
+    { 
+        "Id": 39, 
+        "Nom": "Suppression du cycle océanique", 
+        "Description": "Supprimer le cycle océanique transformerait les océans en étendues stagnantes. Les nutriments et la chaleur cesseraient de se répartir, entraînant une baisse drastique de la productivité marine. Les écosystèmes marins seraient profondément perturbés, affectant la survie de nombreuses espèces. Les climats régionaux deviendraient imprévisibles et les phénomènes météorologiques seraient chaotiques. En résumé, les océans deviendraient des zones mortes, dépourvues de dynamisme et de vie", 
+        "Image": "/poissons/supr_cycle.webp", 
+        "Type": "Poisson", 
+        "Id_related": 13, 
+        "Key": "supr_cycle" 
+    },
+    { 
+        "Id": 40, 
+        "Nom": "Rétrécissement du cycle océanique", 
+        "Description": "Raccourcir le cycle océanique bouleverserait les courants marins, modifiant la distribution de chaleur et de nutriments dans les océans. Les écosystèmes marins seraient perturbés, impactant la répartition des espèces et la biodiversité. Les phénomènes météorologiques et climatiques deviendraient plus imprévisibles, affectant les régions côtières. Les cycles de reproduction et de migration des espèces marines pourraient être désynchronisés. Enfin, la productivité marine, essentielle pour la pêche, serait altérée.", 
+        "Image": "/poissons/reduc_cycle.webp", 
+        "Type": "Poisson", 
+        "Id_related": 14, 
+        "Key": "reduc_cycle" 
+    },
+    { 
+        "Id": 41, 
+        "Nom": "Rallongement du cycle océanique", 
+        "Description": "Allonger le cycle océanique ralentirait la circulation des courants marins, perturbant la distribution de chaleur et de nutriments. Les écosystèmes marins seraient affectés, modifiant la répartition des espèces et la biodiversité. Les phénomènes météorologiques pourraient devenir plus extrêmes et imprévisibles, impactant les régions côtières. Les cycles de reproduction et de migration des espèces marines pourraient être désynchronisés. Enfin, la productivité marine, essentielle pour la pêche, pourrait diminuer, affectant les économies côtières.", 
+        "Image": "/poissons/augment_cycle.webp", 
+        "Type": "Poisson", 
+        "Id_related": 15, 
+        "Key": "augment_cycle" 
+    },
+    { 
+        "Id": 42, 
+        "Nom": "Suppression de la biodiversité", 
+        "Description": "Supprimer toute la biodiversité océanique serait une catastrophe monumentale. Les écosystèmes marins s'effondreraient, éliminant toute forme de vie marine et déstabilisant les chaînes alimentaires. Les pêcheries disparaîtraient, mettant en péril la sécurité alimentaire et les économies côtières. Les cycles de nutriments et les courants marins seraient profondément perturbés, affectant le climat mondial. Finalement, les océans deviendraient des déserts aquatiques, dépourvus de vie et de dynamisme.", 
+        "Image": "/poissons/supr_biodiversity.webp", 
+        "Type": "Poisson", 
+        "Id_related": 16, 
+        "Key": "supr_biodiversity" 
+    },
+    { 
+        "Id": 43, 
+        "Nom": "Diminution de la biodiversité", 
+        "Description": "Diminuer la biodiversité océanique affaiblirait la résilience des écosystèmes marins face aux perturbations. Les chaînes alimentaires deviendraient instables, réduisant la productivité marine. Les espèces auraient moins de diversité génétique pour s'adapter aux changements climatiques. Les pêcheries seraient moins durables, impactant négativement les économies côtières et le tourisme. Enfin, la santé globale des océans en souffrirait, rendant les écosystèmes plus vulnérables aux crises environnementales.", 
+        "Image": "/poissons/reduc_biodiversity.webp", 
+        "Type": "Poisson", 
+        "Id_related": 17, 
+        "Key": "reduc_biodiversity" 
+    },
+    { 
+        "Id": 44, 
+        "Nom": "Destruction de l'écosystème", 
+        "Description": "Détruire les écosystèmes océaniques plongerait les océans dans un chaos total. Toutes les formes de vie marine disparaîtraient, entraînant l'effondrement des chaînes alimentaires. Les pêcheries seraient anéanties, menaçant la sécurité alimentaire mondiale et ruinant les économies côtières. Les courants marins et les cycles de nutriments seraient radicalement perturbés, impactant le climat de manière dramatique. Les océans deviendraient des étendues stériles, sans vie et sans dynamisme.", 
+        "Image": "/poissons/supr_ecosysteme.webp", 
+        "Type": "Poisson", 
+        "Id_related": 18, 
+        "Key": "supr_ecosysteme" 
+    },
+    { 
+        "Id": 45, 
+        "Nom": "Réduction de l'écosystème", 
+        "Description": "Affaiblir les écosystèmes océaniques rendrait les océans plus vulnérables aux perturbations environnementales. Les chaînes alimentaires seraient perturbées, réduisant la productivité marine et affectant la survie des espèces. Les pêcheries deviendraient moins durables, compromettant la sécurité alimentaire des communautés côtières. La résilience aux changements climatiques diminuerait, rendant les océans moins capables de s'adapter. En fin de compte, la santé globale des océans en pâtirait, mettant en péril l'équilibre écologique marin.", 
+        "Image": "/poissons/reduc_ecosysteme.webp", 
+        "Type": "Poisson", 
+        "Id_related": 19, 
+        "Key": "reduc_ecosysteme" 
+    },
+    { 
+        "Id": 46, 
+        "Nom": "Réduction niveau marin", 
+        "Description": "Abaisser la surface des océans exposerait de vastes étendues de fonds marins, transformant certaines zones côtières en terres sèches. Les écosystèmes marins seraient gravement perturbés, les habitats essentiels disparaîtraient et de nombreuses espèces seraient menacées. La circulation océanique et les courants seraient modifiés, influençant le climat global. Les activités humaines, comme la pêche et le commerce maritime, subiraient des impacts majeurs. Enfin, les phénomènes météorologiques locaux pourraient changer radicalement, affectant les régions côtières.", 
+        "Image": "/poissons/reduc_niveau.webp", 
+        "Type": "Poisson", 
+        "Id_related": 20, 
+        "Key": "reduc_niveau" 
+    },
+    { 
+        "Id": 47, 
+        "Nom": "Suppression du courant", 
+        "Description": "Sans courants marins, les océans deviendraient comme de grandes piscines stagnantes. Les nutriments cesseraient de circuler, entraînant une baisse drastique de la productivité marine. Les écosystèmes marins seraient gravement perturbés, affectant les migrations et la survie des espèces. Les conditions météorologiques globales deviendraient imprévisibles, perturbant les climats régionaux. En fin de compte, les océans se transformeraient en vastes étendues d'eau immobiles, dépourvues de dynamisme et de vie.", 
+        "Image": "/poissons/supr_courant.webp", 
+        "Type": "Poisson", 
+        "Id_related": 21, 
+        "Key": "supr_courant" 
+    },
+    { 
+        "Id": 48, 
+        "Nom": "Réduction du courant", 
+        "Description": "Ralentir les courants marins ralentirait la distribution des nutriments et de la chaleur, perturbant les écosystèmes marins. Les espèces marines dépendant des courants pour leurs migrations et leur alimentation seraient affectées. Les phénomènes météorologiques pourraient devenir moins prévisibles, avec des impacts sur le climat global. La productivité des zones de pêche diminuerait, affectant les économies côtières. Enfin, cela pourrait entraîner une stagnation de certaines masses d'eau, augmentant le risque de proliférations d'algues nuisibles.", 
+        "Image": "/poissons/reduc_courant.webp", 
+        "Type": "Poisson", 
+        "Id_related": 22, 
+        "Key": "reduc_courant" 
+    },
+    { 
+        "Id": 49, 
+        "Nom": "Augmentation du courant", 
+        "Description": "Augmenter la force des courants marins rendrait les océans beaucoup plus dynamiques. Les nutriments et la chaleur seraient redistribués plus rapidement, impactant les écosystèmes marins et la répartition des espèces. Les tempêtes pourraient devenir plus fréquentes et puissantes, affectant les côtes. Les courants plus rapides pourraient également perturber les routes maritimes et rendre la navigation plus difficile. Enfin, cela pourrait influencer les phénomènes climatiques, modifiant les cycles météorologiques globaux.", 
+        "Image": "/poissons/augment_courant.webp", 
+        "Type": "Poisson", 
+        "Id_related": 23, 
+        "Key": "augment_courant" 
+    },
+    { 
+        "Id": 50, 
+        "Nom": "Suppresion du plancton", 
+        "Description": "Éliminer les planctons des océans serait désastreux. Sans eux, la base de la chaîne alimentaire marine disparaîtrait, menaçant la survie de nombreuses espèces marines, des poissons aux baleines. La production d'oxygène, en grande partie due au phytoplancton, chuterait dramatiquement, impactant l'atmosphère terrestre. Les écosystèmes marins s'effondreraient, perturbant gravement la pêche et les économies côtières. En bref, les océans deviendraient des déserts aquatiques, dépourvus de vie et de vitalité.", 
+        "Image": "/poissons/supr_plancton.webp", 
+        "Type": "Poisson", 
+        "Id_related": 24, 
+        "Key": "supr_plancton" 
+    },
+    { 
+        "Id": 51, 
+        "Nom": "Réduction du plancton", 
+        "Description": "Réduire les planctons des océans aurait des conséquences graves. La base de la chaîne alimentaire marine s'affaiblirait, menaçant la survie de nombreuses espèces. La production d'oxygène, largement due au phytoplancton, diminuerait, impactant l'atmosphère terrestre. Les écosystèmes marins seraient perturbés, affectant la pêche et les économies côtières. Enfin, les océans deviendraient moins productifs et dynamiques, avec des répercussions écologiques majeures.", 
+        "Image": "/poissons/reduc_plancton.webp", 
+        "Type": "Poisson", 
+        "Id_related": 25, 
+        "Key": "reduc_plancton" 
+    }
+}
+

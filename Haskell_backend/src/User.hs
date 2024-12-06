@@ -12,6 +12,9 @@ import Database.Selda
 import Database.Selda.SQLite
 import Data.Text (pack)
 
+import Control.Monad.IO.Class (liftIO)
+
+
 instance ToJSON (ID a) where
   toJSON = toJSON . pack . show . fromId
 
@@ -71,35 +74,38 @@ instance FromJSON NewUser
 instance ToJSON NewUser
 
 
-dbSelectUser :: SeldaT SQLite IO[User]
+
+dbSelectUser :: SeldaT SQLite IO[(User)]
 dbSelectUser = query $ do
     select user_table
 
-dbSelectSuccess :: SeldaT SQLite IO[Success]
+dbSelectSuccess :: SeldaT SQLite IO[(Success)]
 dbSelectSuccess = query $ do
     select success_table
 
-dbSelectUser_Success :: SeldaT SQLite IO[User_Success]
+dbSelectUser_Success :: SeldaT SQLite IO[(User_Success)]
 dbSelectUser_Success = query $ do
     select user_success_table
 
-dbSelectUserOnly ::NewUser -> SeldaT SQLite IO[User]
+dbSelectUserOnly ::NewUser -> SeldaT SQLite IO[(User)]
 dbSelectUserOnly (NewUser userPseudo userMdp) = query $ do
     u <- select user_table
     restrict ( u ! #user_pseudo .== literal userPseudo)
+    return (u)
 
-dbSelectUsersWithPassword :: NewUser-> SeldaT SQLite IO[User]
+dbSelectUsersWithPassword :: NewUser-> SeldaT SQLite IO[(User)]
 dbSelectUsersWithPassword (NewUser userPseudo userMdp) = query $ do
     u <-  select user_table
     restrict (u ! #user_pseudo .== literal userPseudo)
     restrict (u ! #user_mdp .== literal userMdp)
+    return u
 
-
-dbInsertUser :: NewUser -> String
-dbInsertUser x = do
-    let nameOnly = dbSelectUserOnly x
-    liftIO $ print nameOnly
-    return "True"
+dbAddUser :: NewUser -> SeldaT SQLite IO()
+dbAddUser (NewUser x y) = do
+    tryInsert user_table
+       [
+        User def  x y
+       ]>>= liftIO . print
 
 
 dbInit :: SeldaT SQLite IO ()
