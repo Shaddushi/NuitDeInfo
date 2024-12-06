@@ -34,8 +34,9 @@ function test(){
 
 <template>
     <modal
-    :button-class="'btn btn-light btn-outline-secondary border-secondary border rounded-circle '+buttonClass"
+    :button-class="'btn btn-outline-secondary border-secondary border rounded-circle '+buttonClass + (value ? ' btn-light' : '')"
     :title="title"
+    :has-save-button="false"
     :name="name"
     :button-id="id">
         <template #button>
@@ -50,7 +51,6 @@ function test(){
                 </div>
             </slot>
         </template>
-
 
     </modal>
 </template>

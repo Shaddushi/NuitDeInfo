@@ -25,6 +25,11 @@
         buttonId: {
             type: String,
             default: ""
+        },
+
+        hasSaveButton: {
+            type: Boolean,
+            default: true
         }
     })
 
@@ -62,7 +67,9 @@
                     <slot name="footer">
                     </slot>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" v-if="hasSaveButton">Save changes</button>
+
+
                 </div>
             </div>
         </div>
