@@ -9,3 +9,23 @@ html, body, #app {
   font-weight: normal; /* Poids de la police (normal, bold, etc.) */
   font-style: normal; /* Style de la police (normal, italic, etc.) */
 }
+.container-login{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.div-input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.div-captcha{
+  display: flex;
+  justify-content: center;
+}
+
+.div-captcha img{
+  width: 20%;
+  height: 20%;
+}

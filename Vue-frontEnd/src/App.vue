@@ -5,6 +5,7 @@ import Header from './partials/Header.vue'
 import Modal from './components/Modal.vue';
 import Login from './partials/Login.vue';
 import axios from 'axios';
+import ModalLogin from "@/components/ModalLogin.vue";
 
 </script>
 
@@ -12,9 +13,10 @@ import axios from 'axios';
 
     <div class="h-100">
 
-        <Modal title="Login"> 
+        <ModalLogin>
           <template #modal_body> <Login></Login> </template> 
-          <template #footer>"aaa"</template></Modal>
+          <template #footer>"aaa"</template>
+        </ModalLogin>
         <Header />
         <Home />
     </div>

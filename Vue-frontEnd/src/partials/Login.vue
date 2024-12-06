@@ -1,8 +1,10 @@
 <script setup>
     import axios from 'axios';
-    import { defineEmits } from 'vue';
+    import {defineEmits, ref} from 'vue';
     const password = ref("");
     const user_name = ref("");
+    const input_password = ref("");
+    const input_pseudo = ref("");
 
     const emit = defineEmits(['submitNewUserName'])
 
@@ -28,6 +30,16 @@
 
 
 <template>
-    <div> Hello !</div>
+  <p>Welcome {{ input_pseudo }}</p>
+  <div class="container-login">
+    <div class="div-input">
+      <input v-model="input_pseudo" placeholder="Pseudo" id="pseudo" />
+      <input v-model="input_password" placeholder="password" id="password" autocomplete="off" />
+    </div>
+    <div class="div-captcha">
+      <img src="../assets/captcha/recaptcha.png" alt="captcha" />
+    </div>
+  </div>
+
 
 </template>
