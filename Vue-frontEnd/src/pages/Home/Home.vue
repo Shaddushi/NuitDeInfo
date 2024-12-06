@@ -5,22 +5,17 @@
 
     const immune_system_fish = ref(true)
     const lungs = ref(true)
-    const skin = ref(true)
+    const skin_sea_ceil = ref(true)
     const brain = ref(true)
-    const veins = ref(true)
+    const veins_sea_current = ref(true)
     const heart = ref(2)
-    const kidney = ref(true)
+    const kidney_salt = ref(true)
     const red_cells = ref(true)
     const bones_corals = ref(true)
+    const thermometre = ref(3)
 
-    const salt = ref(true)
-    const water_temperature = ref(true)
-    const phytoplancton = ref(true)
+    const water_temperature = ref(3)
     const marees = ref(true)
-    const cycles_oceaniques = ref(true)
-    const ecosysteme_oceanique = ref(true)
-    const sea_ceil = ref(true)
-    const sea_current = ref(true)
 
     const sea_height = computed(() => {
         if (heart.value == 1){
@@ -60,17 +55,19 @@
     <div class="h-100">
         <div class="row h-100">
             <div class="col-lg-6 text-center h-100 bg-warning">
+
                 <div class="body-container pt-5 h-100 position-relative">
 
                     <img v-if="immune_system_fish" src="../../assets/corps/immune_system.png" class="img-fluid position-absolute custom-img">
                     <img v-if="lungs" src="../../assets/corps/lungs.png" class="img-fluid position-absolute custom-img">
-                    <img v-if="skin" src="../../assets/corps/body2.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="skin_sea_ceil" src="../../assets/corps/body2.png" class="img-fluid position-absolute custom-img">
                     <img v-if="brain" src="../../assets/corps/brain.png" class="img-fluid position-absolute custom-img">
-                    <img v-if="veins" src="../../assets/corps/veins.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="veins_sea_current" src="../../assets/corps/veins.png" class="img-fluid position-absolute custom-img">
                     <img v-if="heart != 1" src="../../assets/corps/heart.png" class="img-fluid position-absolute custom-img">
-                    <img v-if="kidney" src="../../assets/corps/kidney.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="kidney_salt" src="../../assets/corps/kidney.png" class="img-fluid position-absolute custom-img">
                     <img v-if="red_cells" src="../../assets/corps/red_cells.png" class="img-fluid position-absolute custom-img">
                     <img v-if="bones_corals" src="../../assets/corps/bones.png" class="img-fluid position-absolute custom-img">
+                    <img :src="'/src/assets/corps/thermometre-'+thermometre+'.png'" class="img-fluid position-absolute thermometre-img d-none d-lg-block">
 
                     <ElementModal
                     name="immune_system"
@@ -92,7 +89,7 @@
 
                     <ElementModal
                     name="skin"
-                    @input="v => skin = v"
+                    @input="v => skin_sea_ceil = v"
                         id="skin"
                         buttonClass="position-absolute button-infos"
                         title="Peau">
@@ -110,7 +107,7 @@
 
                     <ElementModal
                     name="veins"
-                    @input="v => veins = v"
+                    @input="v => veins_sea_current = v"
                         id="veins"
                         buttonClass="position-absolute button-infos"
                         title="Veines">
@@ -131,8 +128,21 @@
                     </ElementModal>
 
                     <ElementModal
+                    name="thermometre"
+                    id="thermometre"
+                    buttonClass="position-absolute button-infos"
+                    title="Thermometre">
+                        <template #modal_body>
+                            <div>
+                                {{thermometre}}
+                            </div>
+                            <input type="range" class="form-range" min="1" v-model="thermometre" max="5" step="1">
+                        </template>
+                    </ElementModal>
+
+                    <ElementModal
                     name="kidney"
-                    @input="v => kidney = v"
+                    @input="v => kidney_salt = v"
                     id="kidney"
                     buttonClass="position-absolute button-infos"
                     title="Reins">
@@ -157,6 +167,7 @@
                         ici
                     </ElementModal>
 
+
                 </div>
             </div>
             <div class="col-lg-6 text-center h-100 bg-info">
@@ -164,21 +175,10 @@
 
                     <img :src="`/src/assets/ocean/${sea_height}/fond.png`" class="img-fluid position-absolute custom-img">
                     <img v-if="immune_system_fish" :src="`/src/assets/ocean/${sea_height}/fish.png`" class="img-fluid position-absolute custom-img">
-                    <img v-if="corals" :src="`/src/assets/ocean/${sea_height}/corals.png`" class="img-fluid position-absolute custom-img">
-                    <img v-if="salt" :src="`/src/assets/ocean/${sea_height}/salt.png`" class="img-fluid position-absolute custom-img">
-                    <img v-if="sea_ceil" :src="`/src/assets/ocean/${sea_height}/sea_ceil.png`" class="img-fluid position-absolute custom-img">
-                    <img v-if="sea_current" :src="`/src/assets/ocean/${sea_height}/sea_current.png`" class="img-fluid position-absolute custom-img">
-
-                    coraux  -> os humains
-                    salinité -> rein
-                    température eau -> température corporelle
-                    phytoplancton -> globules rouges
-                    marées -> Cœur
-                    cycle océaniques -> respiration
-                    biodiversité océanique -> système immunitaire
-                    écosystème océaniques -> cerveau
-                    surface océanique -> peau
-                    système circulatoire -> courant marins
+                    <img v-if="bones_corals" :src="`/src/assets/ocean/${sea_height}/corals.png`" class="img-fluid position-absolute custom-img">
+                    <img v-if="kidney_salt" :src="`/src/assets/ocean/${sea_height}/salt.png`" class="img-fluid position-absolute custom-img">
+                    <img v-if="skin_sea_ceil" :src="`/src/assets/ocean/${sea_height}/sea_ceil.png`" class="img-fluid position-absolute custom-img">
+                    <img v-if="veins_sea_current" :src="`/src/assets/ocean/${sea_height}/sea_current.png`" class="img-fluid position-absolute custom-img">
 
 
                     <ElementModal
@@ -192,7 +192,7 @@
 
                     <ElementModal
                         name="salt"
-                        @input="v => salt = v"
+                        @input="v => kidney_salt = v"
                         id="salt"
                         buttonClass="position-absolute button-infos"
                         title="Salinité">
@@ -200,17 +200,8 @@
                     </ElementModal>
 
                     <ElementModal
-                        name="water_temperature"
-                        @input="v => water_temperature = v"
-                        id="water_temperature"
-                        buttonClass="position-absolute button-infos"
-                        title="Température de l'eau">
-                        ici
-                    </ElementModal>
-
-                    <ElementModal
                         name="phytoplancton"
-                        @input="v => phytoplancton = v"
+                        @input="v => red_cells = v"
                         id="phytoplancton"
                         buttonClass="position-absolute button-infos"
                         title="Phytoplancton">
@@ -233,7 +224,7 @@
 
                     <ElementModal
                         name="cycles_oceaniques"
-                        @input="v => cycles_oceaniques = v"
+                        @input="v => lungs = v"
                         id="cycles_oceaniques"
                         buttonClass="position-absolute button-infos"
                         title="Cycles océaniques">
@@ -251,7 +242,7 @@
 
                     <ElementModal
                         name="ecosysteme_oceanique"
-                        @input="v => ecosysteme_oceanique = v"
+                        @input="v => brain = v"
                         id="ecosysteme_oceanique"
                         buttonClass="position-absolute button-infos"
                         title="Ecosystème océanique">
@@ -260,7 +251,7 @@
 
                     <ElementModal
                         name="sea_ceil"
-                        @input="v => sea_ceil = v"
+                        @input="v => skin_sea_ceil = v"
                         id="sea_ceil"
                         buttonClass="position-absolute button-infos"
                         title="Surface océanique">
@@ -269,12 +260,14 @@
 
                     <ElementModal
                         name="sea_current"
-                        @input="v => sea_current = v"
+                        @input="v => veins_sea_current = v"
                         id="sea_current"
                         buttonClass="position-absolute button-infos"
                         title="Courants marins">
                         ici
                     </ElementModal>
+
+
                 </div>
             </div>
         </div>
@@ -283,6 +276,13 @@
 
 <style>
 
+.thermometre-img{
+    max-height:80%;
+    top: 50%;
+    left: 116%;
+    z-index:99;
+    transform: translate(-50%, -50%);
+}
     .custom-img{
         max-height:100%;
         top: 50%;
@@ -296,6 +296,13 @@
     .ocean-container img{
         height:100%;
         width: 100%;
+    }
+
+    #thermometre{
+        top: 79%;
+        left: 116%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
     }
 
     #salt{
@@ -387,6 +394,8 @@
     }
 
     .button-infos{
+        z-index: 999;
+
         @media(max-width: 2000px){
             width: 45px;
             height: 45px;
