@@ -1,0 +1,241 @@
+[
+    {
+        "id": 0,
+        "Nom" : "os",
+        "Description": "Sans os, notre corps manquerait de structure et de soutien, nous rendant incapables de tenir debout ou de bouger. Les muscles, qui s'attachent aux os, ne pourraient plus fonctionner correctement. Les organes internes seraient vulnérables aux blessures sans la protection de la cage thoracique et du bassin. En outre, la production de cellules sanguines, qui se fait dans la moelle osseuse, cesserait. Bref, les os sont indispensables pour la mobilité, la protection des organes et la production de sang.",
+        "Type" : "Humain",
+        "Image" : "/corps/no_bones.webp" ,
+        "id_related" : 26,
+        "key" : "no_bones"  
+    },
+    {
+        "id": 1,
+        "Nom" : "rein",
+        "Description": "Si les reins cessent de fonctionner, le corps ne peut plus filtrer les déchets et les excès de liquide du sang, entraînant une accumulation toxique. Les niveaux d'électrolytes deviennent déséquilibrés, affectant la fonction cardiaque et musculaire. Sans intervention, cette situation provoque des œdèmes, de l'hypertension et peut conduire à une insuffisance rénale terminale, nécessitant une dialyse ou une transplantation. Les reins sont donc vitaux pour maintenir l'équilibre et la purification du sang.",
+        "Image" : "/corps/no_kidney.webp" ,
+        "Type" : "Humain",
+        "id_related" : 27,
+        "key" : "no_kidney"  
+    },
+    {
+        "id": 2,
+        "Nom" : "rein",
+        "Description": "Si les reins ne fonctionnent qu'à moitié, ils ne filtrent plus efficacement les déchets et l'excès de liquide du sang, ce qui peut entraîner une accumulation de toxines dans le corps. Les déséquilibres électrolytiques deviennent plus fréquents, affectant le cœur et les muscles. Cette inefficacité peut provoquer de la fatigue, un gonflement (œdème) et une hypertension artérielle. À long terme, la santé globale est compromise, nécessitant souvent une surveillance médicale et des ajustements de mode de vie. Les reins à moitié fonctionnels peinent à maintenir l'équilibre interne du corps.",
+        "Image" : "/corps/reduct_kidney.webp" ,
+        "Type" : "Humain",
+        "id_related" : 28,
+        "key" : "reduct_kidney"  
+    },
+    {
+        "id": 3,
+        "Nom" : "rein",
+        "Description": "Si les reins fonctionnent trop, appelons cela une hyperfiltration, ils peuvent filtrer plus de sang qu'ils ne devraient, entraînant une perte excessive de nutriments essentiels, comme le glucose et les électrolytes. Cette surcharge peut endommager progressivement les glomérules, les unités de filtration des reins, ce qui réduit leur efficacité au fil du temps. De plus, cette condition peut entraîner une augmentation de la pression artérielle et, à long terme, une insuffisance rénale chronique. Bref, des reins en suractivité peuvent causer des déséquilibres et des dommages importants.",
+        "Image" : "/corps/increase_kidney.webp" ,
+        "Type" : "Humain",
+        "id_related" : 29,
+        "key" : "increase_kidney"  
+    },
+    {
+        "id": 4,
+        "Nom" : "température_corporelle",
+        "Description": " Quand la température corporelle diminue, le métabolisme ralentit, provoquant des frissons pour générer de la chaleur. Les organes internes commencent à fonctionner moins efficacement. Une hypothermie sévère peut s'installer, entraînant une confusion mentale et une perte de coordination. Si elle n'est pas traitée, elle peut mener à une défaillance organique et être mortelle. En somme, une baisse de la température corporelle perturbe gravement les fonctions vitales.",
+        "Image" : "/corps/reduct_body_temperature.webp" ,
+        "Type" : "Humain",
+        "id_related" : 30,
+        "key" : "reduct_body_temperature"  
+    },
+    {
+        "id": 5,
+        "Nom" : "température_corporelle",
+        "Description": "Si la température corporelle descend à 0 degrés, cela provoque une hypothermie extrême. Les organes cessent de fonctionner correctement, et le sang commence à coaguler. Le métabolisme ralentit jusqu'à s'arrêter, entraînant la perte de conscience et, sans intervention rapide, la mort. En bref, une telle température corporelle est incompatible avec la survie.",
+        "Image" : "/corps/reduct_body_temperature.webp" ,
+        "Type" : "Humain",
+        "id_related" : 31,
+        "key" : "too_low_body_temperature"  
+    },
+    {
+        "id": 6,
+        "Nom" : "température_corporelle",
+        "Description": "Quand la température corporelle augmente, cela peut causer des troubles comme la fièvre. Les enzymes et les protéines du corps fonctionnent moins efficacement, ce qui perturbe les processus biologiques. Le risque de déshydratation et de coup de chaleur augmente, entraînant des nausées, une fatigue extrême et des étourdissements. Si la température continue à monter, cela peut entraîner des dommages aux organes vitaux et être potentiellement fatal. En somme, une température corporelle élevée peut gravement affecter la santé et le bien-être général.",
+        "Image" : "/corps/increase_body_temperature.webp" ,
+        "Type" : "Humain",
+        "id_related" : 32,
+        "key" : "increase_body_temperature"  
+    },
+    {
+        "id": 7,
+        "Nom" : "température_corporelle",
+        "Description": "Si la température corporelle triplait, ce serait catastrophique pour le corps humain. Les protéines et les enzymes cesseraient de fonctionner correctement, entraînant la destruction rapide des cellules. Les organes vitaux comme le cerveau et le cœur seraient gravement endommagés. Cette situation provoquerait une défaillance organique généralisée et serait rapidement fatale. Une telle élévation extrême de la température corporelle est incompatible avec la vie.",
+        "Image" : "/corps/too_high_body_temperature.webp" ,
+        "Type" : "Humain",
+        "id_related" : 33,
+        "key" : "too_high_body_temperature"  
+    },
+    {
+        "id": 8,
+        "Nom" : "globule rouge",
+        "Description": "Lorsque le taux de globules rouges diminue, le corps ne reçoit pas suffisamment d'oxygène, entraînant une fatigue intense et des essoufflements. Les globules blancs en baisse affaiblissent le système immunitaire, rendant le corps plus vulnérable aux infections. Si les plaquettes sont également affectées, la coagulation du sang devient moins efficace, augmentant le risque de saignements. Une anémie peut se développer, affectant la santé générale et l'énergie. En somme, un faible taux de globules affecte la capacité du corps à fonctionner efficacement.",
+        "Image" : "/corps/reduct_red_blood_cell.webp" ,
+        "Type" : "Humain",
+        "id_related" : 34,
+        "key" : "reduct_red_blood_cell"  
+    },
+    {
+        "id": 9,
+        "Nom" : "globule rouge",
+        "Description": "Si les globules rouges ne fonctionnent plus correctement, le corps ne reçoit plus suffisamment d'oxygène, ce qui entraîne une fatigue intense et des étourdissements. Les cellules et les tissus commencent à souffrir de cette privation d'oxygène, compromettant les fonctions organiques. L'organisme devient plus susceptible aux infections et aux maladies. Sans un transport efficace de l'oxygène, les organes vitaux peuvent commencer à défaillir, mettant la vie en danger. En somme, les globules rouges sont essentiels pour assurer une oxygénation adéquate de tout le corps.",
+        "Image" : "/corps/no_red_blood_cell.webp" ,
+        "Type" : "Humain",
+        "id_related" : 35,
+        "key" : "no_red_blood_cell"  
+    },
+    {
+        "id": 10,
+        "Nom" : "coeur",
+        "Description": "Si notre cœur cesse de fonctionner, le flux sanguin s'arrête instantanément, privant tous les organes, y compris le cerveau, de l'oxygène et des nutriments essentiels. Cela entraîne rapidement une perte de conscience et une défaillance organique généralisée. Sans intervention médicale immédiate, la situation devient rapidement fatale. Le cœur est donc indispensable pour maintenir la vie en assurant une circulation sanguine continue.",
+        "Image" : "/corps/no_heart.webp" ,
+        "Type" : "Humain",
+        "id_related" : 36,
+        "key" : "no_heart"  
+    },
+    {
+        "id": 11,
+        "Nom" : "coeur",
+        "Description": "Si le cœur bat trop lentement, appelé bradycardie, le flux sanguin vers les organes vitaux diminue, entraînant des symptômes comme la fatigue, les vertiges et les évanouissements. Le cerveau et les autres organes reçoivent moins d'oxygène, ce qui peut affecter leur fonctionnement. La bradycardie sévère peut conduire à des évanouissements ou des insuffisances cardiaques, nécessitant une intervention médicale pour rétablir un rythme cardiaque normal. En somme, un cœur trop lent compromet la circulation sanguine essentielle à notre santé.",
+        "Image" : "/corps/slow_heart.webp" ,
+        "Type" : "Humain",
+        "id_related" : 37,
+        "key" : "slow_heart"  
+    },
+    {
+        "id": 12,
+        "Nom" : "coeur",
+        "Description": "Si le cœur bat trop rapidement, appelé tachycardie, il pompe le sang de manière inefficace, réduisant l'apport en oxygène aux organes et provoquant des symptômes comme des palpitations, des vertiges et des essoufflements. Cela peut entraîner des complications graves telles que des crises cardiaques, des accidents vasculaires cérébraux et des défaillances cardiaques. Ainsi, un rythme cardiaque trop rapide compromet la distribution équilibrée du sang nécessaire au bon fonctionnement du corps.",
+        "Image" : "/corps/fast_heart.webp" ,
+        "Type" : "Humain",
+        "id_related" : 38,
+        "key" : "fast_heart"  
+    },
+    {
+        "id": 13,
+        "Nom" : "respiration",
+        "Description": "Si notre système respiratoire cesse de fonctionner, le corps ne peut plus obtenir l'oxygène nécessaire pour survivre, ce qui entraîne rapidement une asphyxie. Les cellules, privées d'oxygène, commencent à mourir, ce qui provoque des défaillances organiques. Sans apport en oxygène, le cœur et le cerveau cessent de fonctionner, entraînant une perte de conscience. Sans intervention médicale d'urgence, cela conduit inévitablement à la mort. Le système respiratoire est donc essentiel pour maintenir la vie en assurant une oxygénation constante du corps.",
+        "Image" : "/corps/no_breathing.webp" ,
+        "Type" : "Humain",
+        "id_related" : 39,
+        "key" : "no_breathing"  
+    },
+    {
+        "id": 14,
+        "Nom" : "respiration",
+        "Description": "Si notre système respiratoire fonctionne trop lentement, le corps ne reçoit pas assez d'oxygène, ce qui entraîne une sensation de fatigue constante et un manque d'énergie. Les niveaux d'oxygène dans le sang chutent, mettant le cœur et le cerveau sous pression. Cela peut causer des étourdissements, des troubles cognitifs et une détérioration générale de la santé. En somme, une respiration trop lente affecte négativement toutes les fonctions corporelles vitales.",
+        "Image" : "/corps/slow_breathing.webp" ,
+        "Type" : "Humain",
+        "id_related" : 40,
+        "key" : "slow_breathing"  
+    },
+    {
+        "id": 15,
+        "Nom" : "respiration",
+        "Description": "Si notre système respiratoire fonctionne trop rapidement, le corps expulse trop de dioxyde de carbone, ce qui perturbe l'équilibre acide-base du sang. Cela peut provoquer des vertiges, des picotements dans les extrémités et une sensation de confusion. En respirant trop vite, nous pouvons également ressentir de l'anxiété accrue et une fatigue rapide. Ainsi, un rythme respiratoire trop élevé peut déséquilibrer notre métabolisme et affecter notre bien-être général.",
+        "Image" : "/corps/fast_breathing.webp" ,
+        "Type" : "Humain",
+        "id_related" : 41,
+        "key" : "fast_breathing"  
+    },
+    {
+        "id": 16,
+        "Nom" : "système immunitaire",
+        "Description": "Si notre système immunitaire cesse de fonctionner, le corps devient extrêmement vulnérable aux infections, car il ne peut plus combattre les bactéries, virus et autres pathogènes. Même les infections mineures pourraient devenir gravement dangereuses. Le corps perdrait sa capacité à se défendre, ce qui pourrait entraîner des maladies fréquentes et sévères. La moindre blessure ou infection pourrait devenir potentiellement mortelle sans une intervention médicale. Le système immunitaire est donc crucial pour notre survie en nous protégeant des menaces externes.",
+        "Image" : "/corps/immune_system.webp" ,
+        "Type" : "Humain",
+        "id_related" : 42,
+        "key" : "no_immune_system"  
+    },
+    {
+        "id": 17,
+        "Nom" : "système immunitaire",
+        "Description": "Lorsque le système immunitaire diminue, le corps devient plus vulnérable aux infections, car il ne peut plus combattre efficacement les virus et les bactéries. La guérison des maladies et des blessures est ralentie, et le risque de contracter des infections opportunistes augmente. Les maladies courantes peuvent devenir plus graves et plus fréquentes. La fatigue et une sensation générale de malaise sont aussi courantes. En somme, un système immunitaire affaibli réduit considérablement la capacité du corps à se défendre et à se rétablir.",
+        "Image" : "/corps/immune_system.webp" ,
+        "Type" : "Humain",
+        "id_related" : 43,
+        "key" : "reduct_immune_system"  
+    },
+    {
+        "id": 18,
+        "Nom" : "cerveau",
+        "Description": "Si notre cerveau cesse de fonctionner, le corps perdrait rapidement toutes ses fonctions vitales. Sans les signaux du cerveau, les organes ne pourraient plus fonctionner correctement, entraînant une défaillance organique. La respiration et le battement du cœur cesseraient, car ces fonctions sont régulées par le cerveau. Une perte de conscience immédiate suivrait, et sans intervention, la mort s'ensuivrait. Le cerveau est donc essentiel pour contrôler et coordonner tous les processus corporels vitaux.",
+        "Image" : "/corps/brain.webp" ,
+        "Type" : "Humain",
+        "id_related" : 44,
+        "key" : "no_brain"  
+    },
+    {
+        "id": 19,
+        "Nom" : "cerveau",
+        "Description": "Si notre cerveau ne fonctionne plus qu'à 50%, les capacités cognitives et motrices seraient gravement réduites. La mémoire, la pensée et la prise de décision deviendraient difficiles, affectant la vie quotidienne. Les fonctions physiques, comme le mouvement et la coordination, seraient également compromises. Des problèmes de communication et de comportement pourraient apparaître, et la qualité de vie serait fortement impactée. En somme, le cerveau est essentiel à notre fonctionnement global.",
+        "Image" : "/corps/brain.webp" ,
+        "Type" : "Humain",
+        "id_related" : 45,
+        "key" : "reduct_brain"  
+    },
+    {
+        "id": 20,
+        "Nom" : "peau",
+        "Description": "Sans peau, le corps perdrait sa barrière protectrice contre les infections, la température serait difficile à réguler, et nous serions vulnérables aux blessures. Les fluides corporels s'évaporeraient, conduisant à une déshydratation rapide. Les nerfs exposés rendraient chaque contact extrêmement douloureux. Bref, la peau est essentielle pour la protection et la régulation du corps.",
+        "Image" : "/corps/skin.webp" ,
+        "Type" : "Humain",
+        "id_related" : 46,
+        "key" : "no_skin"  
+    },
+    {
+        "id": 21,
+        "Nom" : "système circulatoire",
+        "Description": "Si le système circulatoire cesse de fonctionner, les organes ne reçoivent plus l'oxygène et les nutriments nécessaires, ce qui entraîne rapidement une défaillance des organes. Le cœur, incapable de pomper le sang, arrête de battre, et les cellules commencent à mourir par manque d'oxygène. Cela conduit à une perte de conscience et, sans intervention médicale immédiate, peut être fatal. En somme, le système circulatoire est essentiel pour maintenir la vie en apportant continuellement les éléments vitaux aux cellules du corps.",
+        "Image" : "/corps/circulatory_system.webp" ,
+        "Type" : "Humain",
+        "id_related" : 47,
+        "key" : "no_circulatory_system"  
+    },
+    {
+        "id": 22,
+        "Nom" : "système circulatoire",
+        "Description": "Lorsque le système circulatoire diminue, le corps ne reçoit plus suffisamment de sang pour transporter l'oxygène et les nutriments nécessaires aux organes. Cela peut entraîner une fatigue accrue, des étourdissements et une faiblesse générale. Les organes vitaux, comme le cœur et le cerveau, sont particulièrement affectés, ce qui peut entraîner des complications graves. La cicatrisation des plaies et la récupération des maladies ralentissent également. En somme, un système circulatoire affaibli compromet gravement la santé et le fonctionnement global du corps.",
+        "Image" : "/corps/circulatory_system.webp" ,
+        "Type" : "Humain",
+        "id_related" : 48,
+        "key" : "reduct_circulatory_system"  
+    },
+    {
+        "id": 23,
+        "Nom" : "système circulatoire",
+        "Description": "Si le système circulatoire augmente, le cœur pompe plus rapidement et avec plus de force, augmentant ainsi le flux sanguin. Cela peut causer une hypertension artérielle, mettant plus de pression sur les vaisseaux sanguins et les organes. Les organes peuvent se fatiguer à cause de l'excès de travail, ce qui peut entraîner des complications comme des crises cardiaques ou des accidents vasculaires cérébraux. Une circulation accrue peut également causer des dommages aux petits vaisseaux sanguins. En somme, un système circulatoire en suractivité peut entraîner des risques importants pour la santé cardiovasculaire.",
+        "Image" : "/corps/circulatory_system.webp" ,
+        "Type" : "Humain",
+        "id_related" : 49,
+        "key" : "increase_circulatory_system"  
+    },
+    {
+        "id": 24,
+        "Nom" : "cellule",
+        "Description": " Si les cellules ne fonctionnent plus correctement, les organes cessent de recevoir les nutriments et l'oxygène nécessaires, entraînant leur défaillance. La production d'énergie par le corps devient impossible, conduisant à une fatigue extrême et à l'incapacité de maintenir les fonctions vitales. Les tissus commencent à mourir, provoquant des dommages irréversibles. En fin de compte, l'ensemble du corps s'arrête de fonctionner, car les cellules sont les unités de base de la vie.",
+        "Image" : "/corps/cell.webp" ,
+        "Type" : "Humain",
+        "id_related" : 50,
+        "key" : "no_cell"  
+    },
+    {
+        "id": 25,
+        "Nom" : "cellule",
+        "Description": "Si le fonctionnement des cellules diminue, les processus vitaux, comme la production d'énergie et la réparation des tissus, ralentissent, entraînant une fatigue généralisée. Les organes deviennent moins efficaces, ce qui peut causer des troubles métaboliques et une défaillance organique progressive. La capacité du corps à combattre les infections et à guérir des blessures est également compromise. Les cellules étant essentielles à la vie, leur défaillance réduit la capacité globale du corps à maintenir la santé et le fonctionnement normal.",
+        "Image" : "/corps/cell.webp" ,
+        "Type" : "Humain",
+        "id_related" : 51,
+        "key" : "reduct_cell"  
+    }
+    
+    
+
+    
+
+]

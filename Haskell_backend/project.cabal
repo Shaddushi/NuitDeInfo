@@ -12,7 +12,7 @@ common deps
 library
     import:             deps
     hs-source-dirs:     src
-    exposed-modules:    Api, Bdd
+    exposed-modules:    User
 
 executable NuitInfo
     import:             deps
