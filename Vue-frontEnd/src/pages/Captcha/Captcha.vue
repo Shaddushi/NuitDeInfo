@@ -14,6 +14,7 @@
 	let bgReady = false;
 	let bgImage = new Image();
 	bgImage.onload = function(){
+		ctx.drawImage(bgImage, 0, 0);
 		bgReady = true;
 	};
 	bgImage.src = "../../../NuitDeLInfo/src/assets/background/Background.png";
@@ -198,27 +199,39 @@
 	element.addEventListener("mousedown", function(e){
 		if((e.offsetX <= tortue.x + 32 && e.offsetX >= tortue.x)
 		&& (e.offsetY <= tortue.y + 32 && e.offsetY >= tortue.y)){
-			end;
+			end();
 		}
 	})
 
-	var end = function(){
+	function end(){
 		console.log("Touché");
+		document.getElementById("audio").play();
 	}
+	let play_game = false;
+
+	document.getElementById("play").addEventListener("click", () => {
+		play_game = true;
+	})
 
 	var main = function(){
-		update(1);
-		render();
+		if(play_game){
+			update(1);
+			render();
+			let audioElement = document.getElementById("audio");
+			if(audio.paused){
+				audio.play();
+			}
+		}
 	}
 
+
 	setInterval(main, 10);
-
-
-
 })
 </script>
 
 <template>
+	<audio id="audio" src="../../../NuitDeLInfo/src/assets/music/Kubbi-Ember-04Cascade.mp3" autoplay hidden></audio>
 	<div id="game">
 	</div>
+	<button id="play">Play</button>
 </template>
