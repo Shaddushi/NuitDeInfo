@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted} from "vue";
+import {onMounted, watch,ref} from "vue";
 import Login from "../partials/Login.vue";
 
 const props = defineProps({
@@ -18,6 +18,19 @@ onMounted(() => {
   const myModal = new bootstrap.Modal('#exampleModal');
   myModal.show();
 })
+
+const user_name = ref("")
+
+const formHandler = (data) => {
+  user_name.value = data
+}
+const emit = defineEmits(['submitNewUserName']);
+
+
+watch(user_name, (new_user_name) =>{
+  emit("submitNewUserName", user_name.value); 
+})
+
 </script>
 
 <template>
@@ -37,14 +50,9 @@ onMounted(() => {
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <Login/>
+          <Login @NewForm="formHandler"/>
         </div>
-        <div class="modal-footer">
-          <slot name="footer">
-          </slot>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        
       </div>
     </div>
   </div>
