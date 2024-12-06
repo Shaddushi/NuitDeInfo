@@ -22,6 +22,7 @@ onMounted(() => {
 const user_name = ref("")
 
 const formHandler = (data) => {
+  console.log(user_name)
   user_name.value = data
 }
 const emit = defineEmits(['submitNewUserName']);

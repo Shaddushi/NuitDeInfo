@@ -1,12 +1,10 @@
 <script setup>
 
-import { defineEmits, ref } from 'vue';
-    import {defineEmits, ref} from 'vue';
-    import Captcha from "@/pages/Captcha/Captcha.vue";
-    const user_name = ref("");
+  import {defineEmits, ref} from 'vue';
+  import Captcha from "@/pages/Captcha/Captcha.vue";
 
-    const checkbox_captcha = ref(false);
-    const has_win = ref(false);
+  const checkbox_captcha = ref(false);
+  const has_win = ref(false);
 
 const input_pseudo = ref("");
 const loggedin = ref(false)

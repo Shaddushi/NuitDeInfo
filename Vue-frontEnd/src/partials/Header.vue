@@ -1,5 +1,13 @@
 <script setup>
     import { RouterLink } from 'vue-router';
+
+    const props = defineProps({
+        name: {
+            String,
+            default: "anonymous"
+        }
+    })
+
 </script>
 
 
@@ -16,6 +24,7 @@
                         <RouterLink to="/credits">Credits</RouterLink>
                         <RouterLink to="/succes">Succes</RouterLink>
                     </nav>
+                    {{ name }}
                 </div>
 
             </div>
