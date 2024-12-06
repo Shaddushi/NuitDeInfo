@@ -11,11 +11,6 @@ import axios from 'axios';
 <template>
 
     <div class="h-100">
-
-        <Modal title="Login"> 
-          <template #modal_body> <Login></Login> </template> 
-          <template #footer>"aaa"</template></Modal>
-        <Header />
         <Home />
     </div>
 </template>
