@@ -5,10 +5,20 @@ const props = defineProps({
         default: "btn"
     },
 
-    name: {
+    title: {
         type: String,
         defaul: ""
     },
+
+    id: {
+        type: String,
+        default: ""
+    },
+
+    name:{
+        type: String,
+        default: ""
+    }
 })
 
 const value = ref(true)
@@ -25,7 +35,9 @@ function test(){
 <template>
     <modal
     :button-class="'btn btn-light btn-outline-secondary border-secondary border rounded-circle '+buttonClass"
-    :name="name">
+    :title="title"
+    :name="name"
+    :button-id="id">
         <template #button>
             <i class="bi bi-search d-flex align-items-center justify-content-center"></i>
         </template>
@@ -33,7 +45,7 @@ function test(){
         <template #modal_body>
             <div class="form-switch form-switch">
                 <input class="form-check-input fs-2" type="checkbox" v-model="value" @input="test(value)">
-                <label class="form-check-label ps-3" for="checkbox-input">Default switch checkbox input</label>
+                <label class="form-check-label ps-3" for="checkbox-input">Activé</label>
             </div>
         </template>
 

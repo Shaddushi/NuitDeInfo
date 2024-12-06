@@ -11,6 +11,7 @@ import axios from 'axios';
 <template>
 
     <div class="h-100">
+        <Header />
         <Home />
     </div>
 </template>

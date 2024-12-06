@@ -22,20 +22,19 @@
 <template>
     <div class="h-100">
         <div class="row h-100">
-            <div class="col-md-6 text-center h-100 bg-warning">
-                <div class="body-container mt-5 h-100 position-relative">
-                    <div class="position-absolute">
-                        <img v-if="immune_system" src="../../assets/corps/immune_system.png" class="img-fluid position-absolute">
-                        <img v-if="lungs" src="../../assets/corps/lungs.png" class="img-fluid position-absolute">
-                        <img v-if="skin" src="../../assets/corps/skin.png" class="img-fluid position-absolute">
-                        <img v-if="brain" src="../../assets/corps/brain.png" class="img-fluid position-absolute">
-                        <img v-if="veins" src="../../assets/corps/veins.png" class="img-fluid position-absolute">
-                        <img v-if="heart" src="../../assets/corps/heart.png" class="img-fluid position-absolute">
-                        <img v-if="kidney" src="../../assets/corps/kidney.png" class="img-fluid position-absolute">
-                        <img v-if="red_cells" src="../../assets/corps/red_cells.png" class="img-fluid position-absolute">
-                        <img v-if="bones" src="../../assets/corps/bones.png" class="img-fluid position-absolute">
-                        <img v-if="bones" src="../../assets/corps/bones.png" class="img-fluid">
-                    </div>
+            <div class="col-lg-6 text-center h-100 bg-warning">
+                <div class="body-container pt-5 h-100 position-relative">
+
+                    <img v-if="immune_system" src="../../assets/corps/immune_system.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="lungs" src="../../assets/corps/lungs.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="skin" src="../../assets/corps/body2.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="brain" src="../../assets/corps/brain.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="veins" src="../../assets/corps/veins.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="heart" src="../../assets/corps/heart.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="kidney" src="../../assets/corps/kidney.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="red_cells" src="../../assets/corps/red_cells.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="bones" src="../../assets/corps/bones.png" class="img-fluid position-absolute custom-img">
+
 
                     <ElementModal
                     name="immune_system"
@@ -120,72 +119,108 @@
 
                 </div>
             </div>
-            <div class="col-md-6 text-center h-100 bg-primary">
-                <div class="image-container">
-                    <img src="../../assets/corps/lungs.png" alt="example image">
-                    <button class="selector-button">Sélectionner</button>
-                </div>
-            </div>
+            <div class="col-lg-6 text-center h-100 position-relative">ici</div>
         </div>
     </div>
 </template>
 
 <style>
+    .custom-img{
+        max-height:100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .body-container{
         margin: 0 10% 0 10%;
     }
 
+    #immune_system{
+        left: 30%;
+    }
+
+    #lungs{
+        top: 50%;
+        left: 46%;
+    }
+
+    #skin{
+        top: 25%;
+        left: 30%;
+    }
+
+    #veins{
+        top: 25%;
+        left: 65%;
+    }
+
+    #heart{
+        top: 62%;
+        left: 46%;
+    }
+
+    #kidney{
+        top: 80%;
+        left: 46%;
+    }
+
+    #bones{
+        top: 40%;
+        left: 46%;
+    }
+
+    #red_cells{
+        top: 166%;
+        left: 65%;
+    }
+
+    #brain{
+        @media(max-width: 2000px) {
+            top: 8%;
+        }
+        transform: translate(-50%, -50%);
+    }
+
     .button-infos{
         @media(max-width: 2000px){
-            top: 8.5%;
             width: 45px;
             height: 45px;
         }
 
         @media(max-width: 1600px){
-            top: 8%;
             width: 40px;
             height: 40px;
         }
 
         @media(max-width: 1200px){
-            top: 7.5%;
             width: 35px;
             height: 35px;
         }
 
         @media(max-width: 950px){
-            top: 7%;
             width: 30px;
             height: 30px;
         }
 
         @media(max-width: 800px){
-            top: 6%;
             width: 30px;
             height: 30px;
         }
 
         @media(max-width: 700px){
-            top: 7%;
             width: 30px;
             height: 30px;
         }
 
         @media(max-width: 600px){
-            top: 6.5%;
             width: 40px;
             height: 40px;
         }
 
         @media(max-width: 500px){
-            width: 30px;
             height: 30px;
             top: 5%;
         }
-
-
-        transform: translate(-60%, -60%);
     }
 
     .image-container {
@@ -210,6 +245,10 @@
         border: 1px solid #000;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    .cls-1 {
+        fill: #ffb787;
     }
 
 </style>
