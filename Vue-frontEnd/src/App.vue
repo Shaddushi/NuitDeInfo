@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import { RouterLink } from 'vue-router'
 import Home from './pages/Home/Home.vue'
 import Header from './partials/Header.vue'
 import Modal from './components/Modal.vue';
@@ -18,7 +19,9 @@ import ModalLogin from "@/components/ModalLogin.vue";
           <template #footer>"aaa"</template>
         </ModalLogin>
         <Header />
-        <Home />
+		<RouterView></RouterView>
     </div>
+	<div>
+	</div>
 </template>
 
