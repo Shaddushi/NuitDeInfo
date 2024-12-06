@@ -24,7 +24,7 @@ const sendForm = () => {
     }
 </script>
 
-<template class="gradient">
+<template>
   <p class="title-font">Welcome {{ input_pseudo }}</p>
   <div class="container-login">
     <div class="div-input">
@@ -41,5 +41,8 @@ const sendForm = () => {
     </div>
     <div v-show="has_win" class="title-font center" >BRAVO VOUS ETES UN ROBOT</div>
 
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" @click="sendForm()">Save changes</button>
   </div>
 </template>

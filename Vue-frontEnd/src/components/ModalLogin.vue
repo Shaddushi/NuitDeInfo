@@ -50,12 +50,6 @@ watch(user_name, (new_user_name) =>{
         <div class="gradient modal-body">
           <Login @submitNewUserName="formHandler"/>
         </div>
-        <div class="bordertop modal-footer">
-          <slot name="footer">
-          </slot>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
       </div>
     </div>
   </div>
