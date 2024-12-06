@@ -1,0 +1,8 @@
+Pour accéder à notre participation au défi Gros Pixel, il faut:
+       - Démarrer notre projet en allant dans le dossier Vue-frontEnd
+        et taper dans un windows powershell: npm install.
+        Puis taper: npm run dev.
+
+       -Puis lors de l'arrivée sur le site, sur la page de login jouer à notre captcha avec son univers 8-bit ainsi que sa musique 8-bit.
+
+Merci pour ce défi.
