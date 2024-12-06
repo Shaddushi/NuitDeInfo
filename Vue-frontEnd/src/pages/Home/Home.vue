@@ -70,7 +70,7 @@
                     <img v-if="heart != 1" src="../../assets/corps/heart.png" class="img-fluid position-absolute custom-img">
                     <img v-if="kidney" src="../../assets/corps/kidney.png" class="img-fluid position-absolute custom-img">
                     <img v-if="red_cells" src="../../assets/corps/red_cells.png" class="img-fluid position-absolute custom-img">
-                    <img v-if="bones" src="../../assets/corps/bones.png" class="img-fluid position-absolute custom-img">
+                    <img v-if="bones_corals" src="../../assets/corps/bones.png" class="img-fluid position-absolute custom-img">
 
                     <ElementModal
                     name="immune_system"
@@ -150,7 +150,7 @@
 
                     <ElementModal
                     name="bones"
-                    @input="v => bones = v"
+                    @input="v => bones_corals = v"
                     id="bones"
                     buttonClass="position-absolute button-infos"
                     title="Squelette">
