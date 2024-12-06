@@ -16,12 +16,7 @@ const router = createRouter({
       path: '/succes',
       name: 'succes',
       component: Succes,
-    },/*
-    {
-      path: '/credits',
-      name: 'credits',
-      component: Credits,
-    },*/
+    }
 
   ],
 })
