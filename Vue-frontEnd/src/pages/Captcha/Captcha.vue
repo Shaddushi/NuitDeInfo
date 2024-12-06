@@ -240,6 +240,10 @@
     <audio id="audio" src="../../../NuitDeLInfo/src/assets/music/Kubbi-Ember-04Cascade.mp3" autoplay hidden></audio>
     <div id="game">
     </div>
-    <button id="play">Play</button>
+	<div class="center" id="play">
+		<img src="../../../src/assets/corps/play.png"  class="play">
+	</div>
+		
+	
   </div>
 </template>

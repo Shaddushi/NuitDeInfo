@@ -44,3 +44,24 @@ html, body, #app {
   display: flex;
   flex-direction: column;
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.play{
+  width: 50%;
+}
+
+.bordere{
+  border: 5px solid #c9ab4a;
+  border-radius: 2px;
+}
+
+.borderbtm{
+  border-bottom: 5px solid #c9ab4a;
+}
+.bordertop{
+  border-top: 5px solid #c9ab4a;
+}
