@@ -18,7 +18,7 @@ const formHandler = (data) => {
 
     <div class="h-100">
 
-        <ModalLogin>
+        <ModalLogin @submitNewUserName="formHandler">
         </ModalLogin>
         <Header :name="user_name" />
 		<RouterView></RouterView>

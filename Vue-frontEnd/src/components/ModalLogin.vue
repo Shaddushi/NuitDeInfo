@@ -48,9 +48,9 @@ watch(user_name, (new_user_name) =>{
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="gradient modal-body">
-          <Login @NewForm="formHandler"/>
+          <Login @submitNewUserName="formHandler"/>
         </div>
-        <div class="bordertop gradient modal-footer">
+        <div class="bordertop modal-footer">
           <slot name="footer">
           </slot>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
