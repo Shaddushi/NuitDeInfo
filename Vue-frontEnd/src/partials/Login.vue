@@ -1,11 +1,13 @@
 <script setup>
     import axios from 'axios';
     import {defineEmits, ref} from 'vue';
+    import Captcha from "@/pages/Captcha/Captcha.vue";
     const password = ref("");
     const user_name = ref("");
     const input_password = ref("");
     const input_pseudo = ref("");
-    const checkbox_captcha = ref("");
+    const checkbox_captcha = ref(false);
+    const has_win = ref(false);
 
     const emit = defineEmits(['submitNewUserName'])
 
@@ -27,6 +29,14 @@
                 console.error('Erreur lors de la récupération du message :', error);
             })
     }
+
+    function displayPlay(){
+      checkbox_captcha.value = !checkbox_captcha.value;
+    }
+    function hasWin(){
+      has_win.value = !has_win.value;
+    }
+
 </script>
 
 
@@ -37,12 +47,17 @@
       <input v-model="input_pseudo" placeholder="Pseudo" id="pseudo" />
       <input v-model="input_password" placeholder="password" id="password" autocomplete="off" />
     </div>
-    <div class="div-captcha">
-      <img src="../assets/captcha/recaptcha.png" alt="captcha" />
-      <div class="div-input-captcha">
-        <button>Etes vous un robot ?</button>
+    <div v-show="!has_win">
+      <div v-show="checkbox_captcha"><Captcha @update="hasWin()"/></div>
+      <div class="div-captcha" v-show="!checkbox_captcha">
+        <img src="../assets/captcha/recaptcha.png" alt="captcha" />
+        <div class="div-input-captcha">
+          <button v-on:click="displayPlay()">Etes vous un robot ?</button>
+        </div>
       </div>
     </div>
+    <div v-show="has_win">BRAVO VOUS N'ETES PAS UN ROBOT</div>
+
   </div>
 
 
