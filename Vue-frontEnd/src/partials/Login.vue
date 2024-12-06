@@ -1,5 +1,12 @@
 <script setup>
+
 import { defineEmits, ref } from 'vue';
+    import {defineEmits, ref} from 'vue';
+    import Captcha from "@/pages/Captcha/Captcha.vue";
+    const user_name = ref("");
+
+    const checkbox_captcha = ref(false);
+    const has_win = ref(false);
 
 const input_pseudo = ref("");
 const loggedin = ref(false)
@@ -10,6 +17,13 @@ const sendForm = () => {
   emit("submitNewUserName", input_pseudo.value); 
 };
 
+ 
+    function displayPlay(){
+      checkbox_captcha.value = !checkbox_captcha.value;
+    }
+    function hasWin(){
+      has_win.value = !has_win.value;
+    }
 </script>
 
 <template>
@@ -18,9 +32,17 @@ const sendForm = () => {
     <div class="div-input">
       <input v-model="input_pseudo" placeholder="Pseudo" id="pseudo" />
     </div>
-    <div class="div-captcha">
-      <img src="../assets/captcha/recaptcha.png" alt="captcha" />
+    <div v-show="!has_win">
+      <div v-show="checkbox_captcha"><Captcha @update="hasWin()"/></div>
+      <div class="div-captcha" v-show="!checkbox_captcha">
+        <img src="../assets/captcha/recaptcha.png" alt="captcha" />
+        <div class="div-input-captcha">
+          <button v-on:click="displayPlay()">Etes vous un robot ?</button>
+        </div>
+      </div>
     </div>
+    <div v-show="has_win">BRAVO VOUS N'ETES PAS UN ROBOT</div>
+
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-primary" @click="sendForm()">Save changes</button>

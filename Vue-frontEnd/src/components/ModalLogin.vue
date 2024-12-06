@@ -35,9 +35,6 @@ watch(user_name, (new_user_name) =>{
 
 <template>
   <!-- Button trigger modal -->
-  <button type="button" :class="buttonClass" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <slot name="button"></slot>
-  </button>
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
